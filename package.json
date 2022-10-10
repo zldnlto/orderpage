@@ -1,0 +1,27 @@
+{
+  "name": "orderpage_scss",
+  "version": "1.0.0",
+  "description": "SASS 익히기 프로젝트 - 네이버 주문 페이지 만들기",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w -r assets/scss/style.scss assets/css/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zldnlto/orderpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zldnlto/orderpage/issues"
+  },
+  "homepage": "https://github.com/zldnlto/orderpage#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
