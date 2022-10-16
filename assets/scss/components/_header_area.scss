@@ -1,0 +1,73 @@
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03c75a;
+  color: #fff;
+  z-index: 999;
+
+  .place-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $place-header-height;
+
+    .title {
+      order: 2;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .my-orders {
+      order: 3;
+      padding-right: $m-padding;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .link-back {
+      order: 1;
+    }
+  }
+
+  .place-tab {
+    display: flex;
+    height: $place-tab-height;
+    background-color: #03b753;
+
+    .tab-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px;
+      width: 100%;
+
+      .tab {
+        flex: 1;
+        font-size: 16px;
+        text-align: center;
+        opacity: 0.7;
+        &.is-active {
+          font-weight: 700;
+          opacity: 1;
+          .txt::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #fff;
+          }
+        }
+
+        .txt {
+          width: 100%;
+          position: relative;
+          display: inline-block;
+          padding: 0 12px;
+          line-height: $place-tab-height;
+        }
+      }
+    }
+  }
+}
